@@ -13,7 +13,7 @@ import torch
 @st.cache_resource()
 def get_model():
     tokenizer = BertTokenizer.from_pretrained("Recognai/bert-base-spanish-wwm-cased-xnli")
-    model = BertForSequenceClassification.from_pretrained("alechain/bert-finetunned-no-time")
+    model = BertForSequenceClassification.from_pretrained("alechain/bert-finetunned-time")
     return tokenizer, model
 
 tokenizer, model = get_model()
